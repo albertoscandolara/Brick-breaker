@@ -1,0 +1,43 @@
+html,
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
+}
+
+.game-area {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+  width: 1000px;
+  border: 1px solid white;
+}
+
+.game-area .ball {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}
+
+.game-area .bricks-area {
+  flex: 1;
+}
+
+.game-area .free-area {
+  height: 40%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.game-area .free-area #paddle {
+  position: absolute;
+  width: 150px;
+  height: 20px;
+}
